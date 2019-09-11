@@ -59,8 +59,7 @@
 ​	-      myshell> cd ./dirA 처럼 cd 명령어 수행 후 pwd 명령어로 확인하면
 
 ​		/home/usr1/dirA 처럼 디렉토리가 변경된다.
-
-![1.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif)
+![1](https://user-images.githubusercontent.com/46011644/64690935-933a5000-d4cc-11e9-9775-5260f0061a28.png)
 
 ​	▶ 위와 같이 cd 명령어 수행 후 pwd 로 확인하면 디렉토리가 변경되었음을 확인 할 수 있다. 쉘과 같이 cd 명령		어 후 다음 명령어가 와도 수행이 가능하다.
 
@@ -70,7 +69,7 @@
 
 ​	-      myshell> exit 하면 process 가 종료 된다.
 
-![2.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image005.gif)
+![2](https://user-images.githubusercontent.com/46011644/64690940-96cdd700-d4cc-11e9-8f47-450ba9fd577d.PNG)
 
  ▶ exit 명령어 수행 후 process 가 종료됨을 확인할 수 있다.
 
@@ -82,13 +81,12 @@
 
 \-      myshell> sleep 10 & 명령어를 수행 할 겨우 background 로 명령어 프롬프트가 바로 출력되고, background 에서 따로 sleep 명령어를 수행하게 된다.
 
-![3.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif)
+![3](https://user-images.githubusercontent.com/46011644/64690943-99c8c780-d4cc-11e9-9d8f-b5c2f263858c.PNG)
 
  ▶ sleep 10 명령어를 수행하면 foreground 로써 다음 명령어 프롬프트 가 출력될 때 까지 10 초 기다림을 확인 할 수 있다.
 
  
-
-![4.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif)
+![4](https://user-images.githubusercontent.com/46011644/64690946-9b928b00-d4cc-11e9-8435-fe1dbb8dc824.PNG)
 
  ▶ sleep 10 & 명령어 수행하면 sleep 10을 background 에서 수행하기 때문에 바로 명령어 프롬프트가 출력된다.
 
@@ -98,7 +96,7 @@ Ps 명령어로 확인 해 보면 background 에서 sleep 이 계속 수행됨�
 
 \-      **background** **문자 ‘&’ 가 다음과 같이 중간에 나오는 것은 고려하지 않는다.**
 
-![9.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image015.gif)
+![5](https://user-images.githubusercontent.com/46011644/64690949-9df4e500-d4cc-11e9-8ad2-293a44fb155f.PNG)
 
  ▶ 명령어 중간에 ‘&’ 문자열이 나올 경우 에러가 발생했음을 확인 할 수 있다.
 
@@ -106,7 +104,7 @@ Ps 명령어로 확인 해 보면 background 에서 sleep 이 계속 수행됨�
 
 \-      **A; B; C; D&** **일 경우 D 만 background 이고, 나머지는 foreground 로 처리된다.**
 
-![10.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image019.gif)
+![6](https://user-images.githubusercontent.com/46011644/64690952-9fbea880-d4cc-11e9-8154-0f8ea3bfb741.PNG)
 
  ▶ 앞의 명령어는 foreground 로써 실행되고 뒤의 명령어인 sleep 은 background 에서 계속 수행됨을 확인 할 수 있다.
 
@@ -116,7 +114,7 @@ Ps 명령어로 확인 해 보면 background 에서 sleep 이 계속 수행됨�
 
 \-      myshell> ^\ 나 myshell> ^Z , myshell> ^C 해도 process가 종료되지 않고 계속 명령어 프롬프트를 출력한다.
 
-![5.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image021.gif)
+![7](https://user-images.githubusercontent.com/46011644/64690956-a3522f80-d4cc-11e9-8b3b-013a69a62903.PNG)
 
  
 
@@ -124,7 +122,7 @@ Ps 명령어로 확인 해 보면 background 에서 sleep 이 계속 수행됨�
 
 \-      myshell> ps –o “comm. Ppid pid pgid status” 명령어를 통해 각 프로세스의 pgid 를 확인한다.
 
-![6.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image024.gif)
+![8](https://user-images.githubusercontent.com/46011644/64690957-a3522f80-d4cc-11e9-90fd-2b2dc23076f4.PNG)
 
  ▶ 각 process 마다 pgid 가 다름을 확인 할 수 있다.
 
@@ -133,8 +131,7 @@ Ps 명령어로 확인 해 보면 background 에서 sleep 이 계속 수행됨�
 **6.**    **Foreground process** **종료 (제어키 ^\)**
 
 \-      Foreground 에서 myshell> sleep 10 후 제어키 ^\를 하면 foreground 의 process가 종료되어 바로 명령어 프롬프트를 출력한다.
-
-![7.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image027.gif)
+![9](https://user-images.githubusercontent.com/46011644/64690958-a3522f80-d4cc-11e9-82b0-b9328c9ddade.PNG)
 
  
 
@@ -142,16 +139,13 @@ Ps 명령어로 확인 해 보면 background 에서 sleep 이 계속 수행됨�
 
 \-      Process 가 foreground 일 경우 터미널 창에 출력되고 background 일 경우 명령어는 수행되지만 터미널 창에 출력되지는 않는다.
 
-![8.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image029.gif)
-
- 
+![10](https://user-images.githubusercontent.com/46011644/64690964-a6e5b680-d4cc-11e9-981d-da5577cc1a34.PNG)
 
 **8.**    **SIGCHLD****를 이용하여 좀비 처리 하도록 코드구현**
 
 \-      SIGCHILD 를 이용할 경우 ps 를 통해 확인하면 좀비 process 가 생기지 않음을 확인 할 수 있다.
 
-![11.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image031.gif)
-
+![11](https://user-images.githubusercontent.com/46011644/64690966-a6e5b680-d4cc-11e9-9c13-cccfc5ede2e6.PNG)
  ▶ 좀비 process (<defunct.>) 가 없음을 확인 할 수 있다.
 
 
@@ -161,8 +155,7 @@ Ps 명령어로 확인 해 보면 background 에서 sleep 이 계속 수행됨�
 **11.** **리다이렉션 구현**
 
 \-      리다이렉션 기호를 이용하여 파일을 통해 입력을 받거나 파일에 결과를 출력할 수 있다.
-
-![1.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image034.gif)
+![12](https://user-images.githubusercontent.com/46011644/64690967-a6e5b680-d4cc-11e9-9908-c5be4e0afa80.PNG)
 
 ▶ 처음에 파일을 통해 test.txt 에 입력을 하고 난 후 파일을 통해 test.txt 를 읽어보면 처음에 작성한 대로 출력됨을 확인할 수 있다.
 
@@ -170,15 +163,14 @@ Ps 명령어로 확인 해 보면 background 에서 sleep 이 계속 수행됨�
 
 ▶ 실제 test.txt 파일과 test.1 파일
 
-![3.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image038.gif)
-
+![13](https://user-images.githubusercontent.com/46011644/64690977-abaa6a80-d4cc-11e9-977b-5b51189424de.PNG)
  
 
 **12.** **파이프 구현**
 
 \-      파이프를 통해 부모와 자식 프로세스간의 통신이 가능함을 확인 할 수 있다.
 
-![1.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image034.gif)![2.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image043.gif)
+![14](https://user-images.githubusercontent.com/46011644/64690978-abaa6a80-d4cc-11e9-8158-5401e73e08af.PNG)![15](https://user-images.githubusercontent.com/46011644/64690979-ac430100-d4cc-11e9-9dd2-8b4509d226f2.PNG)
 
 ▶ 처음 파이프 명령 수행으로 
 
@@ -194,19 +186,19 @@ wc –l : 라인 수 세기
 
 ▶ 실제 ls.txt 파일
 
-![img](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image046.jpg)
+![16](https://user-images.githubusercontent.com/46011644/64690981-ac430100-d4cc-11e9-9887-17446f3dd22d.PNG)
 
 ▶ 위에서 수행한 파이프 명령(ls.txt | grep ^d| wc-l) 을 dir_num.txt 에 저장한 후 dir_num.txt를 출력하면 ls.txt 파일에 있는 디렉토리의 개수가 출력됨을 확인할 수 있다. (디렉토리가 없으므로 0이 출력)
 
 ▶ 실제 dir_num.txt 파일
 
-![img](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image049.jpg)
+![17](https://user-images.githubusercontent.com/46011644/64690982-ac430100-d4cc-11e9-93a7-3594f6987320.PNG)
 
 **III.**      **구현 방법 기술**
 
 **1.**    **cd** **명령어를 구현하기 위한 함수 선언**
 
-![01.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image054.gif)
+![18](https://user-images.githubusercontent.com/46011644/64690983-acdb9780-d4cc-11e9-8337-5261b6fa32ea.PNG)
 
 ▶ cmd_cd 함수는 cmd_line 에 cd 명령어가 있을 경우 cd 를 수행 한 후 다음 명령어를 수행하고, cd 명령어가 없을 경우 처음 명령어부터 수행할 수 있는 함수이다. return 정수형 값은 “;” 로 구분한 명령어 배열의 index 를 타나낸다.
 
@@ -222,7 +214,7 @@ wc –l : 라인 수 세기
 
 **2.**    **Background** **인지 foreground 인지 판별하기 위한 함수 선언**
 
-![02.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image056.gif)
+![19](https://user-images.githubusercontent.com/46011644/64691003-b238e200-d4cc-11e9-9044-9f3ca62ea4b9.PNG)
 
 ▶ get_cmd_grp_type() 함수는 명령라인 맨 마지막 글자가 ‘&’ 일 경우 background 를 리턴하는 함수이다. 명령어 수행을 위해 background 일 경우 ‘&’ 문자를 ‘\0’ 값으로 변경한다.
 
@@ -232,11 +224,9 @@ wc –l : 라인 수 세기
 
 **3.**    **명령어 수행 등 쉘을 처리하는 함수**
 
-![11.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image062.gif)
-
-![22.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image068.gif)
-
-![33.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image072.gif)
+![20](https://user-images.githubusercontent.com/46011644/64691005-b2d17880-d4cc-11e9-81bc-a2e98a3bf83c.PNG)
+![21](https://user-images.githubusercontent.com/46011644/64691006-b2d17880-d4cc-11e9-8f06-8d23199c127c.PNG)
+![22](https://user-images.githubusercontent.com/46011644/64691007-b2d17880-d4cc-11e9-9229-3cfba5d7b018.PNG)
 
 ▶ run_cmd_lind 은 입력받은 문자열을 명령어 단위로 구분한 수 자식 process 를 만들어 수행 해 주는 함수이다.
 
@@ -244,7 +234,7 @@ wc –l : 라인 수 세기
 
 **Line 91** : cmd_line명령어를 “;” 문자로 구분 한 후 cmd_grp_list 배열에 넣는다.
 
-![1.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image074.jpg)
+![23](https://user-images.githubusercontent.com/46011644/64691008-b36a0f00-d4cc-11e9-8537-8c42e8cf57f5.PNG)
 
 **Line 99** : SIGCHLD 를 사용하여 좀비를 처리한다.. SIGCHLD 를 통해 좀비처리를 수행 할 경우 쉘이 포그라운드 waitpid()시 포그라운드 프로세스가 온전하게 수행된다.
 
@@ -276,8 +266,7 @@ wc –l : 라인 수 세기
 
 **4.**    **Main** **함수**
 
-![1111.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif)
-
+![24](https://user-images.githubusercontent.com/46011644/64691009-b36a0f00-d4cc-11e9-898e-31d352cb4aaa.PNG)
 **line 236** : signal을 이용 해 제어키에 의해서도 종료되지 않도록 추가한다.
 
 **Line 250** : 입력받은 문자열이 “exit” 일 경우 while 문을 빠져나가 process 가 종료된다.
@@ -291,9 +280,7 @@ wc –l : 라인 수 세기
 **▶****추가 사항, 변경사항◀**
 
 **5.**    **리다이렉션 기호를 구분하여 수행하는 parse_redirction 함수 추가**
-
-![1.PNG](file:///C:/Users/qlcsl/AppData/Local/Temp/msohtmlclip1/01/clip_image081.gif)
-
+![25](https://user-images.githubusercontent.com/46011644/64691010-b36a0f00-d4cc-11e9-8603-196b7ec9b179.PNG)
 ▶ parse_redirction(char *cmdline) 함수는 다음과 같이 구현한다.
 
 1. “ <, >” 기호가 있는지 체크하고, 체크된 기호에 따라 변경시킬 프로세스의 표준입력이나 표준출력을 리다이렉트 한다.
